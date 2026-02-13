@@ -1,0 +1,153 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#232323">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="keywords" content='{{ site.keywords | join: ", " }}'>
+		<meta name="robots" content="index, follow">
+
+        <meta name="title" content="{{ site.title}}">
+		<meta name="description" content="{{ site.description }}">
+
+        <meta property="og:type" content="website">
+		<meta property="og:url" content="{{ site.url }}">
+        <meta property="og:title" content="{{ site.title }}">
+		<meta property="og:description" content="{{ site.description }}">
+
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+
+        <title>{{ site.title }}</title>
+        <link href="/assets/css/style.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <main>
+            <!-- Top -->
+            <section class="top">
+                <img src="/assets/images/bill-bright.svg" class="logo" />
+                <h1>Hi, we're MysteryHack</h1>
+                <p class="subtitle">
+                    Makers of chaotic conference games and unusual little gadgets.
+                </p>
+            </section>
+
+            <!-- Projects -->
+            <section>
+                <h2>Projects</h2>
+                <div class="projects">
+                    <a href="https://cc.mysteryhack.com" target="_blank" class="project-link">
+                        <img src="/assets/images/icon-512-creature.png" alt="Book cover with questionmark" />
+                        <h3>Creature Cards</h3>
+                        <p>
+                            NFC collection game for 39c3
+                            <br>
+                            <u>cc.mysteryhack.com</u>
+                        </p>
+                    </a>
+                
+                    <a href="https://bill.mysteryhack.com" target="_blank" class="project-link">
+                        <img src="/assets/images/icon-512-bill.png" alt="Bill PCB" />
+                        <h3>Bill Badge</h3>
+                        <p>
+                            Multiplayer game badge for 36c3
+                            <br>
+                            <u>bill.mysteryhack.com</u>
+                        </p>
+                    </a>
+                
+                    <a href="/blinkitten/" target="_blank" class="project-link">
+                        <img src="/assets/images/icon-512-blinkitten.png" alt="Cat blinky PCB" />
+                        <h3>Blinkitten Badge</h3>
+                        <p>
+                            Cute DIY blinky cat PCB
+                            <br>
+                            <u>mysteryhack.com/blinkitten</u>
+                        </p>
+                    </a>
+                
+                    <a href="https://github.com/MysteryHack/Penguicorn" target="_blank" class="project-link">
+                        <img src="/assets/images/icon-512-penguicorn.png" alt="Penguicorn PCB" />
+                        <h3>Penguicorn Badge</h3>
+                        <p>
+                            Cute ESP8266 badge
+                            <br>
+                            <u>github.com/MysteryHack/Penguicorn</u>
+                        </p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Blog -->
+            <section class="blog">
+                <h2>Blog Posts</h2>
+                <ul>
+                    {% for post in site.posts limit:5 %}
+                    <li>
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
+
+            <!-- Events -->
+            <section>
+                <h2>Events</h2>
+                    We are typically found at the Chaos Communication Congress or Camp, as well as other similar events. 
+                    Besides our MysteryHack projects, we also like to bring personal projects and our vending machine, 
+                    filled with electronic goods :)
+                <br>
+                <div class="events">
+                    <a href="https://events.ccc.de/congress/2025/infos/startpage.html" target="_blank">39c3</a>
+                    <a href="https://why2025.org/" target="_blank">WHY2025 Camp</a>
+                    <a href="https://events.ccc.de/congress/2024/infos/index.html" target="_blank">38c3</a>
+                    <a href="https://events.ccc.de/congress/2023/infos/index.html" target="_blank">37c3</a>
+                    <a href="https://events.ccc.de/camp/2023/infos/index.html" target="_blank">CCCamp2023</a>
+                    <a href="https://hacken.es/edicion/2023" target="_blank">Hack-én (2023)</a>
+                    <a href="https://mch2022.org/#/" target="_blank">MCH Camp</a>
+                    <a href="https://events.ccc.de/congress/2019/wiki/index.php/Main_Page" target="_blank">36c3</a>
+                    <a href="https://events.ccc.de/camp/2019/wiki/Main_Page" target="_blank">CCCamp2019</a>
+                    <a href="https://events.ccc.de/congress/2018/wiki/index.php/Main_Page" target="_blank">35c3</a>
+                </div>
+            </section>
+
+            <!-- Team -->
+            <section>
+                <h2>Team</h2>
+                    We are a group of friends from different countries who come together for hacker events to work on fun projects and games. 
+                    Special mention to our friends at <a href="https://binhacken.de/" target="_blank">binhacken</a>, a hackerspace in Germany with whom we often collaborate and share an assembly at the Chaos events to organise games, such as the Creature Cards at 39c3.
+                    <br>
+                    <div class="team"> 
+                        <a href="https://deantonious.es">@deantonious</a>
+                        <a href="https://spacehuhn.com">@Spacehuhn</a>
+                        <a href="https://13r1ckz.com/">@13r1ckz</a>
+                        <a href="">@Killergeek</a>
+                        <a href="https://jamz.dev">@Jamz</a>
+                        <a href="">@Swali</a>
+                        <a href="">@Bommlon</a>
+                    </div>
+            </section>
+
+            <!-- Contact -->
+            <section>
+                <h2>Contact</h2>
+                    Find us on Mastodon at <a href="https://chaos.social/@mysteryhack" target="_blank">@mysteryhack@chaos.social</a>.
+                    <br>
+                    We also have a discord server that you can join using <a href="https://discord.gg/JAyeY4a3gk" target="_blank">this invite link</a>.
+                    <br>
+                    Or you can send us an email to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+            </section>
+        </main>
+
+        <footer>
+            <!-- What are you doing down here? Whatever, here's a cookie 🍪 -->
+        </footer>
+    </body>
+</html>

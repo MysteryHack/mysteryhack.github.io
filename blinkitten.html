@@ -1,0 +1,206 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="theme-color" content="#232323">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="keywords" content='{{ site.keywords | join: ", " }}'>
+		<meta name="robots" content="index, follow">
+
+        <meta name="title" content="Blinkitten Badge">
+		<meta name="description" content="Cute blinky kitten badges for Hack-én congress.">
+
+        <meta property="og:type" content="website">
+		<meta property="og:url" content="{{ site.url }}">
+        <meta property="og:title" content="{Blinkitten Badge">
+		<meta property="og:description" content="Cute blinky kitten badges for Hack-én congress.">
+
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+
+        <title>Blinkitten Badge</title>
+
+        <style>
+            body {
+                background: #ebebeb;
+                font-family: 'Abel', sans-serif;
+                font-size: 1.5em;
+            }
+
+            .kittens img {
+                width: 320px;
+            }
+
+            main {
+                text-align: center;
+                width: 60%;
+                margin: 0 auto;
+            }
+
+            h1 {
+                font-size: 3em;
+                margin: 15px;
+            }
+            
+            .title {
+                font-family: 'Permanent Marker', cursive;
+            }
+
+            section {
+                margin: 15px 0 30px 0;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            p {
+                margin: 15px 0 30px 0;
+            }
+
+            .instructions {
+                display: grid;
+                grid-template-columns: minmax(120px, 250px) 1fr;
+                gap: 20px 40px;
+                align-items: start;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .instructions ol {
+                margin: 10px 0;
+                text-align: left;
+            }
+
+            .instructions img {
+                width: 100% !important;
+                max-width: 250px;
+                height: auto;
+                display: block;
+            }
+
+            .instructions h3 {
+                margin: 0 0 8px 0;
+            }
+
+            .instructions .description {
+                margin: 0;
+                padding: 0 4px;
+                text-align: left;
+            }
+
+            @media (max-width:961px)  {
+                h1 {
+                    font-size: 2em;
+                    margin: 5px;
+                }
+
+                main {
+                    width: 95%;
+                }
+
+                .instructions {
+                    grid-template-columns: 1fr;
+                    gap: 12px 0;
+                }
+
+                .instructions img {
+                    width: 80% !important;
+                    max-width: 320px;
+                    margin: 0 auto;
+                }
+
+                .instructions .description {
+                    padding: 0 6px;
+                }
+
+                .kittens img {
+                    width: 45%;
+                }
+            }
+
+            @-webkit-keyframes kitten-animation {
+                from {
+                    -webkit-filter: hue-rotate(0deg);
+                }
+                to {
+                    -webkit-filter: hue-rotate(-360deg);
+                }
+            }
+
+            .animated {
+                -webkit-animation: kitten-animation 6s infinite linear; 
+                animation: kitten-animation 6s infinite linear;
+            }
+
+            @keyframes kitten-animation {
+                from {
+                    filter: hue-rotate(0deg);
+                }
+                
+                to {
+                    filter: hue-rotate(-360deg);
+                }
+                
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <section>
+                <h1>Introducing <span class="title">Blinkitten</span> badge!</h1>
+                <p>The customizable blinky kitten badge made with ❤️ by <a href="/">MysteryHack</a> for <a href="https://hack-en.org/">Hack-én</a> 1st edition.</p>
+                <div class="kittens">
+                    <img id="kitten1" class="animated" src="/assets/images/kitten/kitten1.png">
+                    <img id="kitten2" src="/assets/images/kitten/kitten2.png">
+                    <img id="kitten3" src="/assets/images/kitten/kitten3.png">
+                    <img id="kitten4" src="/assets/images/kitten/kitten5.png">
+                </div>
+            </section>
+            <section>
+                <h2>Getting a Blinkitten Badge</h2>
+                To get your hands on a Blinkitten badge you can either attend @deantonious's workshop "#badgelife culture and hardware hacking" or simply look for him around the conference (might be wearing a Dipper Pines cap) <img src="/assets/images/kitten/dipper.png" style="width: 64px; margin: -15px 5px;"> during <a href="https://hack-en.org/calendario-hacken/" target="_blank">Hack-én</a>.
+
+            </section>
+            <section>
+                <h2>Assembly Instructions</h2>
+                <div class="instructions">
+                    <div>
+                        <img src="/assets/images/kitten/kittenstructions.png" style="width: 250px;">
+                    </div>
+                    <div class="description">
+                        <h3>Final released Badge</h3>
+                        Follow these steps to solder your #blinkitten badge: 
+                        <ol>
+                            <li>Solder the battery holder. Pay special attention to the + and - icons on the silkscreen and the battery holder!</li>
+                            <li>Solder the switch making sure it's well fit on the PCB holes.</li>
+                            <li>Bridge the optional resistor pads (not needed for the used LEDs).</li>
+                            <li>Solder the left LED making sure the long leg (anode / +) is soldered to the longger pad and the short leg (cathode / -) is soldered to the short pad.</li>
+                            <li>Solder the right LED as you did with the left one.</li>
+                            <li>Bend the legs to hidde them both behind the cat ears.</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <img src="/assets/images/kitten/kittenerror.png" style="width: 120px;">
+                    </div>
+                    <div class="description">
+                        <h3>Hack-én Distributed Badge</h3>
+                        We had a small error when sending the files to the factory, but the badge is fully functional. If you want to use the ON/OFF switch (instead of having an always ON badge), it can be easily done following these steps:
+                        <ol>
+                            <li>Use a hobby knife or cutter to cut the miss-connected route.</li>
+                            <li>Solder the included cable to the battery holder pad and the top pad of the optional resistor.</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

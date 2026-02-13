@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Abel';
+    src: url('../fonts/Abel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    overflow: visible;
+    background-color: #232323;
+    font-family: 'Abel', sans-serif;
+    line-height: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;          /* use most of screen on normal monitors */
+    max-width: 870px;   /* caps width on large / ultrawide screens */
+    padding: 2rem 1rem;  /* adds small horizontal padding for phones */
+}
+
+@media (max-width: 640px) {
+    main {
+        width: 95%;      /* almost full width on phones */
+        padding: 1rem;   /* smaller padding top & sides */
+    }
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.4em;
+    line-height: 2.2rem;
+}
+
+h2 {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+section+section {
+    margin-top: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #0aac42;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+footer {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1rem;
+    color: #eee;
+    font-size: .9rem;
+}
+
+.logo {
+    width: 200px;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: space-between;
+    gap: .5rem;
+}
+
+.projects>a {
+    flex: 0 0 auto;
+    width: 175px;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 1rem;
+    background-color: #333;
+}
+
+.projects>a:hover {
+    background-color: #0aac42;
+}
+
+.projects>a>img {
+    width: 100%;
+    height: auto;
+}
+
+.projects>a>h3 {
+    margin: .25rem 0;
+    padding: 0;
+}
+
+.projects>a>p {
+    margin: 0;
+    padding: 0;
+}
+
+.events, 
+.team {
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: space-between;
+    gap: .5rem;
+}
+
+.events>a,
+.team>a {
+    flex: 0 0 auto;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 1rem;
+    background-color: #333;
+}
+
+.events>a:hover,
+.team>a:hover {
+    background-color: #0aac42;
+}
