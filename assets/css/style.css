@@ -10,7 +10,7 @@ body {
     margin: 0;
     overflow: visible;
     background-color: #232323;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 25px;
     font-weight: 300;
     color: #fff;
@@ -35,14 +35,16 @@ img {
 }
 
 h1 {
+    font-family: 'Abel', sans-serif;
     font-size: 2.4em;
     line-height: 2.2rem;
 }
 
 h2 {
+    font-family: 'Abel', sans-serif;
     font-size: 1.6em;
     text-transform: uppercase;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
 }
 
 h3 {
