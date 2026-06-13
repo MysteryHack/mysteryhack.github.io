@@ -8,7 +8,9 @@ author: "Spacehuhn"
 This was the third time we ran the creature cards game, this time at the Gulaschprogrammiernacht in Karlsruhe. Once again, we were surprised by the number of people who participated in our game! Towards the end, you could hardly take a step without having several creature cards in sight.
 We definitely learned a lot from this event, and we are now preparing for 40C3.
 
-If you don't know what the creature cards game is: it's a game we created for 39C3, where you collect creatures by scanning NFC cards. You can also make your own cards, and we print and flash them for you at the event. Check out [creaturecards.de](https://creaturecards.de/) for more info.
+Like always, you can check out our [stats page](https://creaturecards.de/stats/GPN24) to see all the numbers from the event and the [Creaturedex](https://creaturecards.de/index/GPN24) to see all the creatures that were discovered.
+
+If you don't know what the creature cards game is: it's a game we created for 39C3, where you collect creatures by scanning NFC cards. You can also make your own cards, and we print and flash them for you at the event. Check out [creaturecards.de/about](https://creaturecards.de/about) for more info.
 
 ## Leading up to GPN24
 
@@ -58,6 +60,8 @@ We want to improve the app and open-source it, with hopes to expand on the playe
 
 We are super happy with the new creatures you all made! They are funny, they are creative, and they are weird. We love them all!
 It looks like you are all getting better at making cards, and we are excited to see what you will come up with for 40C3. We also had some great conversations about the game, the app, and the future of creature cards.
+
+![All new creature sprites from GPN24](/assets/images/creature/gpn24/gpn24-creatures.png)
 
 We flashed one creature card onto an implant (and this time we didn't forget to remove the write protection!). Another person with an implant managed to copy a creature card onto it themselves. And a third person with several implants, unfortunately, didn't have a compatible NFC tag. But we still learned a lot about it.
 
