@@ -96,8 +96,16 @@
                     {% endfor %}
                 </ul>
 
-                External:<br>
-                <a href="https://www.openproject.org/blog/creature-cards-game/">[openproject.org] The creature cards hunt at our OpenProject offsite</a>
+                External:
+                <ul>
+                    {% for post in site.posts limit:5 %}
+                    <li>
+                        <span>[openproject.org]</span>
+                        <a target="_blank" href="https://www.openproject.org/blog/creature-cards-game/">The creature cards hunt at our OpenProject offsite</a>
+                        <span>2026-10-16</span>
+                    </li>
+                    {% endfor %}
+                </ul>
             </section>
 
             <!-- Events -->
